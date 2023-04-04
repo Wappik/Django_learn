@@ -11,7 +11,11 @@
     {% extends 'base.html' %}
 
     {% block content %}
-    <h1>homepage</h1>
+        <ul>
+            {% for post in object_list %}
+                <li>{{ post }}</li>
+            {% endfor %}
+        </ul>
     {% endblock %}
 </body>
 </html>
